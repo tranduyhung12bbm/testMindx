@@ -101,10 +101,12 @@ const TodoApp = () => {
         <ul>
           {filterTasks().map((task) => (
             <li key={task.id}>
-              <span
-                className={task.completed ? "completed" : ""}
+              <input
+                type="checkbox"
+                checked={task.completed}
                 onClick={() => completeTask(task.id)}
-              >
+              />
+              <span className={`${task.completed ? "completed_task" : ""}`}>
                 {task.title}
               </span>
               <button onClick={() => deleteTask(task.id)}>Delete</button>

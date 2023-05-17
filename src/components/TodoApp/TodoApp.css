@@ -63,5 +63,9 @@
     border-bottom: 5px solid #000df2;
     box-sizing: border-box;
   }
+
+  .completed_task{
+    text-decoration: line-through;
+  }
   
   
