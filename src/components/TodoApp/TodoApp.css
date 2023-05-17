@@ -24,10 +24,10 @@
   
   button {
     padding: 5px 10px;
-    background-color: #4caf50;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
-    border-radius: 4px;
+    border-radius: 2px;
+    background-color: none;
     cursor: pointer;
   }
   
@@ -46,8 +46,6 @@
     justify-content: space-between;
     margin-bottom: 5px;
     padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
   }
   
   .completed {
@@ -56,23 +54,14 @@
   
   .filter-container {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-around;
     margin-bottom: 10px;
   }
   
   button.active {
-    background-color: #4caf50;
+    background-color: none;
+    border-bottom: 5px solid #000df2;
+    box-sizing: border-box;
   }
   
-  .clear-button {
-    /* display: block;
-    margin: 0 auto; */
-    padding: 5px 10px;
-    background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
   
